@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bazar</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="libs/fontAwesome/css/all.min.css">
+	<script src="js/script.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class="top">
+			<div class="left">
+				<div class="currency">
+					<p id="selected-currency">USD</p>
+					<p id="choise-currency">&#11206;</p>
+					<div id="list-currency">
+						<p id="first-currency">UAH</p>
+						<p id="second-currency">RUB</p>
+						<p id="third-currency">EUR</p>
+					</div>
+				</div>
+				<div class="language">
+					<p id="selected-language">Ukrainian</p>
+					<p id="choise-language">&#11206;</p>
+					<div id="list-language">
+						<p id="first-language">English</p>
+						<p id="second-language">Russian</p>
+					</div>
+				</div>
+				<div class='help'>
+					<div id= "block-help">
+						<p id="selected-help"><a href="#">Help</a></p>
+						<p id="choise-help">&#11206;</p>
+					</div>
+					<div id="list-help">
+						<p id="first-help"><a href="#">Twitter</a></p>
+						<p id="second-help"><a href="#">About Bazar</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="Login">Login<i class="fas fa-user"></i></div>
+				<div class="Register">Register<i class="fas fa-lock"></i></div>
+				<div class="bars"><i class="far fa-bars"></i></div>
+			</div>
+		</div>
+		<div class="middle">
+			<div class="phone">
+				<i class="fal fa-mobile"></i><p id="middle-phone">2300-3560-222</p>
+			</div>
+			<div class="logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="recycle">
+				<div class="recycle-icon"><i class="fal fa-shopping-basket"></i></div>
+				<p id="counter-recycle">0</p>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<div class="search">
+			<div class="categories">
+				<p><i class="fad fa-bars"></i></p>
+				<p>Select a category</p>
+				<p>&#11206;</p>
+			</div>
+			<div class="searching">
+				<input type="text">
+				<i class="fad fa-search"></i>
+			</div>
+		</div>
+		<div class="menu">
+			<p>Home</p>
+			<p>Furniture</p>
+			<p>Chair</p>
+			<p>Table</p>
+			<p>Sofa</p>
+			<p>Bedroom</p>
+			<p>Blog</p>
+		</div>
+	</nav>
+	<main>
+		<div class="advertising">
+			<div class="hot-deals">
+				<div class="top-deals">
+					<p>HOT DEALS</p>
+					<div class="scroll-deals">
+						<ul>
+							<li>&#11044;</li>
+							<li>&#11044;</li>
+							<li>&#11044;</li>
+						</ul>
+					</div>
+				</div>
+				<div class="center-deals">
+					<div class="cart"><p><i class="fal fa-shopping-basket"></i>ADD TO CARD</p></div>
+					<div class="time days"><p>25<br><span>DAYS</span></p></div>
+					<div class="time hours"><p>10<br><span>HRS</span></p></div>
+					<div class="time minutes"><p>45<br><span>MINS</span></p></div>
+					<div class="time seconds"><p>30<br><span>SECS</span></p></div>
+				</div>
+				<div class="footer-deals">
+					<p id="deals-name">Aenean Ru Bristique</p>
+					<div class="raiting">
+						<div class="star-raiting n1 ">&#9734;</div>
+						<div class="star-raiting n2">&#9734;</div>
+						<div class="star-raiting n3">&#9734;</div>
+						<div class="star-raiting n4">&#9734;</div>
+						<div class="star-raiting n5">&#9734;</div>
+					</div>
+					<div class="options-menu">
+						<div class="option"><i class="fad fa-eye"></i></div>
+						<div class="option"><i class="fad fa-heart"></i></div>
+						<div class="option"><i class="fad fa-exchange"></i></div>
+					</div>
+					<div class="priсe">
+						<p id="sale">$350.00</p>
+						<p>$300.00</p>
+					</div>
+				</div>
+			</div>
+			<div class="shop-now">
+				<div class="padding-top"></div>
+				<div class="information">
+					<p>INDOOR <span>FURNITURE</span></p>
+					<p>SAVE UP TO 50% OF ALL FURNITURE</p>
+				</div>
+				<div class="shop-button"><p>SHOP NOW</p></div>
+				<div class="padding-bottom"></div>
+				<div class="slider">
+					<i class="fad fa-chevron-left"></i>
+					<i class="fad fa-chevron-right"></i>
+				</div>
+			</div>
+			<div class="benefits">
+				<div class="shipping">
+					<p>FREE SHIPPING</p>
+					<p>ALL ORDER</p>
+					<div class="circle">
+						<div>
+							<i class="fad fa-truck"></i>
+						</div>
+					</div>
+				</div>
+				<div class="support">
+					<p>24/7 CUSTOMER</p>
+					<p>SUPPORT</p>
+					<div class="circle">
+						<div>
+							<i class="fad fa-user-headset"></i>
+						</div>
+					</div>
+				</div>
+				<div class="money-back">
+					<p>MONEY BACK</p>
+					<p>GUARANTEE</p>
+					<div class="circle">
+						<div>
+							<i class="fad fa-reply-all"></i>
+						</div>
+					</div>
+				</div>
+				<div class="discount">
+					<p>MEMBER DISCOUNT</p>
+					<p>FIRST ORDER</p>
+					<div class="circle">
+						<div>
+							<i class="fad fa-percent"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sofa">
+				<div>
+					<p>GUEST ROOM</p>
+					<p>SOFA</p>
+					<p>-20%</p>
+				</div>
+			</div>
+			<div class="chair">
+				<p><span>OFFICE</span> CHAIR</p>
+				<p>COLLECTION</p>
+				<p>$200.00</p>
+			</div>
+			<div class="special">
+				<p><span>SPECIAL</span> COLLECTION</p>
+				<p>SAVE UP 45% OF FURNITURE</p>
+			</div>
+		</div>
+		<div class="news">
+			<div class="furnitures">
+				<div><p>NEW FURNITURE</p></div>
+				<div class="choice-furnitures">
+					<p>Bed</p>
+					<p>Chair</p>
+					<p>Sofa</p>
+					<p>Table</p>
+					<p>Dining</p>
+				</div>
+				<div class="scroll-furnitures">
+					<ul>
+						<li>&#11044;</li>
+						<li>&#11044;</li>
+						<li>&#11044;</li>
+					</ul>
+				</div>
+			</div>
+			<div class="propositions">
+				<div class="item">
+					<div class="item-picture">
+						<div class="item-sale"><p>sale</p></div>
+						<div class="view"><p>Quick View</p></div>
+						<div class="add"><p><i class="fal fa-shopping-basket"></i>ADD TO CART</p></div>
+					</div>
+					<div class="item-information">
+						<p id="item-name">Aenean Ru Bristique</p>
+						<div class="raiting">
+							<div class="star-raiting n1">&#9734;</div>
+							<div class="star-raiting n2">&#9734;</div>
+							<div class="star-raiting n3">&#9734;</div>
+							<div class="star-raiting n4">&#9734;</div>
+							<div class="star-raiting n5">&#9734;</div>
+						</div>
+						<div class="item-menu">
+							<div class="items like"><i class="fad fa-heart"></i></div>
+							<div class="items compare"><i class="fad fa-exchange"></i></div>
+						</div>
+						<div class="item-priсe">
+							<p>$30.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-picture">
+						<div class="item-sale"><p>sale</p></div>
+						<div class="view"><p>Quick View</p></div>
+						<div class="add"><p><i class="fal fa-shopping-basket"></i>ADD TO CART</p></div>
+					</div>
+					<div class="item-information">
+						<p id="item-name">Aenean Ru Bristique</p>
+						<div class="raiting">							
+							<div class="star-raiting n1">&#9734;</div>
+							<div class="star-raiting n2">&#9734;</div>
+							<div class="star-raiting n3">&#9734;</div>
+							<div class="star-raiting n4">&#9734;</div>
+							<div class="star-raiting n5">&#9734;</div>
+						</div>
+						<div class="item-menu">
+							<div class="items like"><i class="fad fa-heart"></i></div>
+							<div class="items compare"><i class="fad fa-exchange"></i></div>
+						</div>
+						<div class="item-priсe">
+							<p>$40.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-picture">
+						<div class="item-sale"><p>sale</p></div>
+						<div class="view"><p>Quick View</p></div>
+						<div class="add"><p><i class="fal fa-shopping-basket"></i>ADD TO CART</p></div>
+					</div>
+					<div class="item-information">
+						<p id="item-name">Aenean Ru Bristique</p>
+						<div class="raiting">							
+							<div class="star-raiting n1">&#9734;</div>
+							<div class="star-raiting n2">&#9734;</div>
+							<div class="star-raiting n3">&#9734;</div>
+							<div class="star-raiting n4">&#9734;</div>
+							<div class="star-raiting n5">&#9734;</div>
+						</div>
+						<div class="item-menu">
+							<div class="items like"><i class="fad fa-heart"></i></div>
+							<div class="items compare"><i class="fad fa-exchange"></i></div>
+						</div>
+						<div class="item-priсe">
+							<p id="item-discount">$40.00</p>
+							<p>$35.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-picture">
+						<div class="item-sale"><p>sale</p></div>
+						<div class="view"><p>Quick View</p></div>
+						<div class="add"><p><i class="fal fa-shopping-basket"></i>ADD TO CART</p></div>
+					</div>
+					<div class="item-information">
+						<p id="item-name">Aenean Ru Bristique</p>
+						<div class="raiting">							
+							<div class="star-raiting n1">&#9734;</div>
+							<div class="star-raiting n2">&#9734;</div>
+							<div class="star-raiting n3">&#9734;</div>
+							<div class="star-raiting n4">&#9734;</div>
+							<div class="star-raiting n5">&#9734;</div>
+						</div>
+						<div class="item-menu">
+							<div class="items like"><i class="fad fa-heart"></i></div>
+							<div class="items compare"><i class="fad fa-exchange"></i></div>
+						</div>
+						<div class="item-priсe">
+							<p>$30.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-picture">
+						<div class="item-sale"><p>sale</p></div>
+						<div class="view"><p>Quick View</p></div>
+						<div class="add"><p><i class="fal fa-shopping-basket"></i>ADD TO CART</p></div>
+					</div>
+					<div class="item-information">
+						<p id="item-name">Aenean Ru Bristique</p>
+						<div class="raiting">							
+							<div class="star-raiting n1">&#9734;</div>
+							<div class="star-raiting n2">&#9734;</div>
+							<div class="star-raiting n3">&#9734;</div>
+							<div class="star-raiting n4">&#9734;</div>
+							<div class="star-raiting n5">&#9734;</div>
+						</div>
+						<div class="item-menu">
+							<div class="items like"><i class="fad fa-heart"></i></div>
+							<div class="items compare"><i class="fad fa-exchange"></i></div>
+						</div>
+						<div class="item-priсe">
+							<p>$25.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-picture">
+						<div class="item-sale"><p>sale</p></div>
+						<div class="view"><p>Quick View</p></div>
+						<div class="add"><p><i class="fal fa-shopping-basket"></i>ADD TO CART</p></div>
+					</div>
+					<div class="item-information">
+						<p id="item-name">Aenean Ru Bristique</p>
+						<div class="raiting">							
+							<div class="star-raiting n1">&#9734;</div>
+							<div class="star-raiting n2">&#9734;</div>
+							<div class="star-raiting n3">&#9734;</div>
+							<div class="star-raiting n4">&#9734;</div>
+							<div class="star-raiting n5">&#9734;</div>
+						</div>
+						<div class="item-menu">
+							<div class="items like"><i class="fad fa-heart"></i></div>
+							<div class="items compare"><i class="fad fa-exchange"></i></div>
+						</div>
+						<div class="item-priсe">
+							<p>$15.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-picture">
+						<div class="item-sale"><p>sale</p></div>
+						<div class="view"><p>Quick View</p></div>
+						<div class="add"><p><i class="fal fa-shopping-basket"></i>ADD TO CART</p></div>
+					</div>
+					<div class="item-information">
+						<p id="item-name">Aenean Ru Bristique</p>
+						<div class="raiting">
+							<div class="star-raiting n1">&#9734;</div>
+							<div class="star-raiting n2">&#9734;</div>
+							<div class="star-raiting n3">&#9734;</div>
+							<div class="star-raiting n4">&#9734;</div>
+							<div class="star-raiting n5">&#9734;</div>
+						</div>
+						<div class="item-menu">
+							<div class="items like"><i class="fad fa-heart"></i></div>
+							<div class="items compare"><i class="fad fa-exchange"></i></div>
+						</div>
+						<div class="item-priсe">
+							<p>$25.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-picture">
+						<div class="item-sale"><p>sale</p></div>
+						<div class="view"><p>Quick View</p></div>
+						<div class="add"><p><i class="fal fa-shopping-basket"></i>ADD TO CART</p></div>
+					</div>
+					<div class="item-information">
+						<p id="item-name">Aenean Ru Bristique</p>
+						<div class="raiting">							
+							<div class="star-raiting n1">&#9734;</div>
+							<div class="star-raiting n2">&#9734;</div>
+							<div class="star-raiting n3">&#9734;</div>
+							<div class="star-raiting n4">&#9734;</div>
+							<div class="star-raiting n5">&#9734;</div>
+						</div>
+						<div class="item-menu">
+							<div class="items like"><i class="fad fa-heart"></i></div>
+							<div class="items compare"><i class="fad fa-exchange"></i></div>
+						</div>
+						<div class="item-priсe">
+							<p id="item-discount">$20.00</p>
+							<p>$15.00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="furniture-gallery">
+				<div class="name-gallery">
+					<p>FURNITURE GALLERY</p>
+				</div>
+				<div class="img-gallery">
+					<div class="menu-gallery">
+						<p>FEATURED</p>
+						<p>TOP SELLER</p>
+						<p>SALE OFF</p>
+						<p>TOP RATED</p>
+					</div>
+					<div class="img">
+						<div class="img-menu">
+							<div class="img-option"><i class="fad fa-eye"></i></div>
+							<div class="img-option"><i class="fad fa-heart"></i></div>
+							<div class="img-option"><i class="fad fa-exchange"></i></div>
+							<div class="img-option"><i class="fal fa-shopping-basket"></i></div>
+						</div>
+						<div class="hidden-menu">
+							<p>Revision</p>
+							<p>Like</p>
+							<p>Compare</p>
+							<p>Add to cart</p>
+						</div>
+						<div class="img-deal">							
+								<div class="img-price">
+									<p>$120.00</p>
+									<p>$160.00</p>
+								</div>
+								<p>Aenean Ru Bristique</p>
+								<div class="raiting">
+									<div class="star-raiting n1 ">&#9734;</div>
+									<div class="star-raiting n2">&#9734;</div>
+									<div class="star-raiting n3">&#9734;</div>
+									<div class="star-raiting n4">&#9734;</div>
+									<div class="star-raiting n5">&#9734;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-gallery">
+					<div class="button">
+						<i class="fad fa-chevron-left"></i>
+					</div>
+					<div class="slider-img"><img src="img/Couch.jpg" alt=""></div>
+					<div class="slider-img"><img src="img/Desk-1.jpg" alt=""></div>
+					<div class="slider-img"><img src="img/Living-Room-Furniture.jpg" alt=""></div>
+					<div class="slider-img"><img src="img/Living-Room-Sets-1.jpg" alt=""></div>
+					<div class="slider-img"><img src="img/Sectional-Sofa.jpg" alt=""></div>
+					<div class="slider-img"><img src="img/sofa.jpg" alt=""></div>
+					<div class="slider-img"><img src="img/table-sofa.jpg" alt=""></div>
+					<div class="button">
+						<i class="fad fa-chevron-right"></i>
+					</div>
+				</div>
+			</div>
+			<div class="bedroom-bad">
+				<p>FROM<span>$50.80</span></p>
+				<p>Bedroom Bed</p>
+				<p>SHOP NOW</p>
+				</div>
+			</div>
+		</div>
+		<div class="blog">
+			<div class="latest-blog">
+				<div class="name-blog">
+					<p>LATEST BLOG</p>
+				</div>
+				<div class="scroll-blog">
+					<ul>
+						<li>&#11044;</li>
+						<li>&#11044;</li>
+						<li>&#11044;</li>
+					</ul>
+				</div>
+			</div>
+			<div class="text-blog">
+				<div class="block-blog">
+					<div class="img-blog"></div>
+					<div class="content-blog">
+						<p class="date"><i class="fad fa-calendar-alt"></i>15 JAN 2020</p>
+						<p class="comments"><i class="fad fa-comments"></i>4 Comments</p>
+						<p class="colled-blog">Products That Fight Static</p>
+						<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corporis, illo saepe expedita voluptatibus obcaecati doloribus minus voluptatem modi officia, ipsa, impedit a nemo ut sint, deleniti aspernatur! Qui, autem.</p>
+						<p class="blog-button">Read More</p>
+					</div>
+				</div>
+				<div class="block-blog">
+					<div class="img-blog"></div>
+					<div class="content-blog">
+						<p class="date"><i class="fad fa-calendar-alt"></i>15 JAN 2020</p>
+						<p class="comments"><i class="fad fa-comments"></i>4 Comments</p>
+						<p class="colled-blog">Products That Fight Static</p>
+						<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corporis, illo saepe expedita voluptatibus obcaecati doloribus minus voluptatem modi officia, ipsa, impedit a nemo ut sint, deleniti aspernatur! Qui, autem.</p>
+						<p class="blog-button">Read More</p>
+					</div>
+				</div>
+				<div class="block-blog">
+					<div class="img-blog"></div>
+					<div class="content-blog">
+						<p class="date"><i class="fad fa-calendar-alt"></i>15 JAN 2020</p>
+						<p class="comments"><i class="fad fa-comments"></i>4 Comments</p>
+						<p class="colled-blog">Products That Fight Static</p>
+						<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corporis, illo saepe expedita voluptatibus obcaecati doloribus minus voluptatem modi officia, ipsa, impedit a nemo ut sint, deleniti aspernatur! Qui, autem.</p>
+						<p class="blog-button">Read More</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider-brand">
+				<div class="slider-button">
+					<i class="fad fa-chevron-left"></i>
+				</div>
+				<div class="brand"><img src="img/brand_1.png" alt=""></div>
+				<div class="brand"><img src="img/brand_2.png" alt=""></div>
+				<div class="brand"><img src="img/brand_3.png" alt=""></div>
+				<div class="brand"><img src="img/brand_4.png" alt=""></div>
+				<div class="brand"><img src="img/brand_5.png" alt=""></div>
+				<div class="brand"><img src="img/brand_6.png" alt=""></div>
+				<div class="slider-button">
+					<i class="fad fa-chevron-right"></i>
+				</div>
+			</div>
+		</div>
+		<div class="feedback">
+			<div class="client-feedback">
+				<div class="latest-blog">
+					<div class="name-blog">
+						<p>CLIENT FEEDBACK</p>
+					</div>
+					<div class="scroll-blog">
+						<ul>
+							<li>&#11044;</li>
+							<li>&#11044;</li>
+							<li>&#11044;</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="text-feedback">
+				<i class="fad fa-quote-right"></i>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam, accusamus perferendis laudantium est tempore temporibus ducimus quas quia nemo qui molestiae, officiis praesentium odit voluptatibus magni perspiciatis doloribus, vero sunt, tenetur dolorem eum. Explicabo!</p>
+				<div class="sign">
+					<div class="photo"></div>
+					<p>John Smith	<br> <span>Furniture client</span></p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="description">
+			<div class="description-options">
+				<div class="footer-option">
+					<p>INFORMATION</p>
+					<p>About us</p>
+					<p>Privacy</p>
+					<p>Conditions</p>
+					<p>Online support</p>
+				</div>
+				<div class="footer-option">
+					<p>MY ACCOUNT</p>
+					<p>Login</p>
+					<p>My Cart</p>
+					<p>Wishlist</p>
+					<p>Chechout</p>
+				</div>
+				<div class="footer-option">
+					<p>INFORMATION</p>
+					<p>Specials</p>
+					<p>New Products</p>
+					<p>Best Sellers</p>
+					<p>Our Stores</p>
+				</div>
+				<div class="footer-option">
+					<p>ORDERS</p>
+					<p>Payment options</p>
+					<p>Shipping and delivery</p>
+					<p>Returns</p>
+					<p>Shipping</p>
+					<div class="payments"><img src="img/payments.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>©Copyright 2016 Bazar | All rights Reserved</p>
+			<p>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-youtube"></i>
+				<i class="fab fa-google-plus-g"></i>
+				<i class="fab fa-invision"></i>
+				<i class="fab fa-pinterest-p"></i>
+			</p>
+		</div>
+	</footer>
+</body>
+
+</html>
+

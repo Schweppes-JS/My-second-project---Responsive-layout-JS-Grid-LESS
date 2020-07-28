@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Poppins Medium';
+	src: url('../fonts/Popins_Mediun/Poppins-Medium.eot');
+	src: url('../fonts/Popins_Mediun/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Popins_Mediun/Poppins-Medium.woff') format('woff'),
+	url('../fonts/Popins_Mediun/Poppins-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poppins Semibold';
+	src: url('../fonts/Poppins-SemiBold/Poppins-SemiBold.eot');
+	src: url('../fonts/Poppins-SemiBold/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Poppins-SemiBold/Poppins-SemiBold.woff') format('woff'),
+	url('../fonts/Poppins-SemiBold/Poppins-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poppins Light';
+	src: url('../fonts/Popins_Light/Poppins-Light.eot');
+	src: url('../fonts/Popins_Light/Poppins-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Popins_Light/Poppinslight.woff') format('woff'),
+	url('../fonts/Popins_Light/Poppinslight.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
