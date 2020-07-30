@@ -105,22 +105,22 @@ let secondCurrency = document.getElementById('second-currency');
 let thirdCurrency = document.getElementById('third-currency');
 	selectedCurrency.onclick = function () {
 		listCurrency.style.visibility = 'hidden';
-		currency.innerHTML = '&#11206;';
+		currency.innerHTML = '&#9660;';
 	}
 	currency.onclick = function () {
-		if (this.innerHTML == '\u2BC6') {
-			this.innerHTML = '&#11205;';
+		if (this.innerHTML == '\u25BC') {
+			this.innerHTML = '&#9650;';
 			listCurrency.style.visibility = 'visible';
 			listCurrency.style.opacity = "1";
 		}
 		else {
-			this.innerHTML = '&#11206;';
+			this.innerHTML = '&#9660;';
 			listCurrency.style.opacity = '0';
 			setTimeout(function(){listCurrency.style.visibility = 'hidden'}, 200)
 		}
 	}
 	firstCurrency.onclick = function () {
-		currency.innerHTML = '&#11206;';
+		currency.innerHTML = '&#9660;';
 		let variable = firstCurrency.innerHTML;
 		let selected = selectedCurrency.innerHTML;
 		selectedCurrency.innerHTML = variable;
@@ -129,7 +129,7 @@ let thirdCurrency = document.getElementById('third-currency');
 		setTimeout(function(){listCurrency.style.visibility = 'hidden'}, 200)
 	}
 	secondCurrency.onclick = function () {
-		currency.innerHTML = '&#11206;';
+		currency.innerHTML = '&#9660;';
 		let variable = secondCurrency.innerHTML;
 		let selected = selectedCurrency.innerHTML;
 		selectedCurrency.innerHTML = variable;
@@ -138,7 +138,7 @@ let thirdCurrency = document.getElementById('third-currency');
 		setTimeout(function(){listCurrency.style.visibility = 'hidden'}, 200)
 	}
 	thirdCurrency.onclick = function () {
-		currency.innerHTML = '&#11206;';
+		currency.innerHTML = '&#9660;';
 		let variable = thirdCurrency.innerHTML;
 		let selected = selectedCurrency.innerHTML;
 		selectedCurrency.innerHTML = variable;
@@ -154,22 +154,22 @@ let firstLanguage = document.getElementById('first-language');
 let secondLanguage = document.getElementById('second-language');
 	selectedLanguage.onclick = function () {
 		listLanguage.style.visibility = 'hidden';
-		language.innerHTML = '&#11206;';
+		language.innerHTML = '&#9660;';
 	}
 	language.onclick = function () {
-		if (this.innerHTML == '\u2BC6') {
-			this.innerHTML = '&#11205;';
+		if (this.innerHTML == '\u25BC') {
+			this.innerHTML = '&#9650;';
 			listLanguage.style.visibility = 'visible';
 			listLanguage.style.opacity = "1";
 		}
 		else {
-			this.innerHTML = '&#11206;';
+			this.innerHTML = '&#9660;';
 			listLanguage.style.opacity = '0';
 			setTimeout(function(){listLanguage.style.visibility = 'hidden'}, 200)
 		}
 	}
 	firstLanguage.onclick = function () {
-		language.innerHTML = '&#11206;';
+		language.innerHTML = '&#9660;';
 		let variable = firstLanguage.innerHTML;
 		let selected = selectedLanguage.innerHTML;
 		selectedLanguage.innerHTML = variable;
@@ -178,7 +178,7 @@ let secondLanguage = document.getElementById('second-language');
 		setTimeout(function(){listLanguage.style.visibility = 'hidden'}, 200)
 	}
 	secondLanguage.onclick = function () {
-		language.innerHTML = '&#11206;';
+		language.innerHTML = '&#9660;';
 		let variable = secondLanguage.innerHTML;
 		let selected = selectedLanguage.innerHTML;
 		selectedLanguage.innerHTML = variable;
@@ -193,29 +193,29 @@ let selectedHelp = document.getElementById('selected-help');
 let firstHelp = document.getElementById('first-help');
 let secondHelp = document.getElementById('second-help');
 	help.onclick =  function () {
-		if (this.innerHTML == '\u2BC6') {
-			this.innerHTML = '&#11205;';
+		if (this.innerHTML == '\u25BC') {
+			this.innerHTML = '&#9650;';
 			listHelp.style.opacity = "1";
 			listHelp.style.visibility = 'visible';
 		}
 		else {
-			this.innerHTML = '&#11206;';
+			this.innerHTML = '&#9660;';
 			listHelp.style.opacity = '0';
 			setTimeout(function(){listHelp.style.visibility = 'hidden'}, 200)
 		}
 	}
 	selectedHelp.onclick =  function () {
-		help.innerHTML = '&#11206;';
+		help.innerHTML = '&#9660;';
 		listHelp.style.opacity = '0';
 		setTimeout(function(){listHelp.style.visibility = 'hidden'}, 200)
 	}
 	firstHelp.onclick =  function () {
-		help.innerHTML = '&#11206;';
+		help.innerHTML = '&#9660;';
 		listHelp.style.opacity = '0';
 		setTimeout(function(){listHelp.style.visibility = 'hidden'}, 200)
 	}
 	secondHelp.onclick =  function () {
-		help.innerHTML = '&#11206;';
+		help.innerHTML = '&#9660;';
 		listHelp.style.opacity = '0';
 		setTimeout(function(){listHelp.style.visibility = 'hidden'}, 200)
 	}

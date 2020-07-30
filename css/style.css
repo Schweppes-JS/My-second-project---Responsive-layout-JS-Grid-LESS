@@ -844,10 +844,10 @@ nav {
   position: absolute;
   background-color: white;
   margin-top: -40px;
+  margin-left: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-column-align: center;
-  justify-self: center;
   width: 80px;
   height: 80px;
   border-radius: 50%; }
