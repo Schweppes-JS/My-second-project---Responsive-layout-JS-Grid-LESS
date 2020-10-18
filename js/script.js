@@ -1,69 +1,78 @@
-let sliderImage = document.querySelectorAll('.slider-img');
-let img = document.getElementById('img');
-console.log(img.style);
+const sliderContainer = document.querySelector('.slider-container');
+const sliderImages = document.querySelectorAll('.slider-img');
+const mainImg = document.getElementById('img');
+const leftButton = document.querySelectorAll('.button')[0];
+const rightButton = document.querySelectorAll('.button')[1];
 
 // Insert preview image on main block
 function changingImage(e) {
+	sliderImages.forEach(element => element.classList.remove("selected"));
+	e.path[1].classList.add("selected");
 	const url = e.target.attributes.src.nodeValue;
-	img.style.backgroundImage = `url("${url}")`;
+	mainImg.style.backgroundImage = `url("${url}")`;
 }
 
 // Add event listener to all preview image
-sliderImage.forEach(element => {
+sliderImages.forEach(element => {
 	element.addEventListener('click', changingImage);
 });
 
+// Slider position
+let counter = 0;
+const sliderWidth = parseInt(getComputedStyle(sliderContainer).width);
 
+// Move slider to left
+function toLeft() {
+	if (counter > 0) {
+		counter = counter - 93;
+		sliderContainer.style.transform = `translateX(-${counter}px)`;
+	}
+	else return;
+}
 
+// Changing main image on click to left arrow
+function setPreviousImg() {
+	for (let i = 0; i < sliderImages.length; i++) {
+		if(sliderImages[i].className == "slider-img selected") {
+			if (i == 0) {
+				break;
+			}
+			sliderImages[i].classList.remove("selected");
+			sliderImages[i-1].classList.add("selected");
+			const url = sliderImages[i-1].children[0].attributes.src.nodeValue;
+			mainImg.style.backgroundImage = `url("${url}")`;
+			break;
+		}
+	}
+	toLeft();
+}
 
-// for (let i = 0; i < sliderImg.length; i++) {
-// 	sliderImg[i].onclick = function () {
-// 		var url = 'url' + "('" + sliderImg[i].children[0].attributes[0].nodeValue + "')";
-// 		img.style.backgroundImage = url;
-// 		for (let l =0; l < sliderImg.length; l++) {
-// 			sliderImg[l].style.margin = '12px 0 ';
-// 		}
-// 		sliderImg[i].style.margin = '8px 0 16px 0';
-// 	}
-// }
+// Move slider to right
+function toRight() {
+	if (counter < sliderWidth - 465) {
+		counter = counter + 93;
+		sliderContainer.style.transform = `translateX(-${counter}px)`;
+	} else return;
+} 
 
-// let button = document.querySelectorAll('.button')
-// button[0].onclick = function () {
-// 	for (let i = 0; i < sliderImg.length; i++) {
-// 		if (getComputedStyle(sliderImg[i]).marginTop == '8px') {
-// 			if (i==0) {
-// 				break;
-// 			}
-// 			else if (i>0) {
-// 				sliderImg[i].style.margin = '12px 0';
-// 				sliderImg[i-1].style.margin = '8px 0 16px 0';
-// 				var url = 'url' + "('" + sliderImg[i-1].children[0].attributes[0].nodeValue + "')";
-// 				img.style.backgroundImage = url;
-// 				if ((i>2) && (i<=sliderImg.length-3)) {
-// 					sliderImg[i-3].style.display = 'block';
-// 					sliderImg[i+2].style.display = 'none';
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-// button[1].onclick = function () {
-// 	for (let i = 0; i < sliderImg.length; i++) {
-// 		if (getComputedStyle(sliderImg[i]).marginTop == '8px') {
-// 			if ((i>=0) && (i!=sliderImg.length-1)) {
-// 				sliderImg[i].style.margin = '12px 0';
-// 				sliderImg[i+1].style.margin = '8px 0 16px 0';
-// 				var url = 'url' + "('" + sliderImg[i+1].children[0].attributes[0].nodeValue + "')";
-// 				img.style.backgroundImage = url;
-// 				if ((i>1) && (i<sliderImg.length-3)) {
-// 					sliderImg[i-2].style.display = 'none';
-// 					sliderImg[i+3].style.display = 'block';
-// 				}
-// 				break;
-// 			}
-// 			else if (i==sliderImg.length-1) {
-// 				break;
-// 			}
-// 		}
-// 	}
-// }
+// Changing main image on click to right arrow
+function setNextImg() {
+	for (let i = 0; i < sliderImages.length; i++) {
+		if(sliderImages[i].className == "slider-img selected") {
+			if (i == sliderImages.length - 1) {
+				break;
+			}
+			console.log(i);
+			sliderImages[i].classList.remove("selected");
+			sliderImages[i+1].classList.add("selected");
+			const url = sliderImages[i+1].children[0].attributes.src.nodeValue;
+			mainImg.style.backgroundImage = `url("${url}")`;
+			break;
+		}
+	}
+	toRight();
+}
+
+// Listeners for buttons
+leftButton.addEventListener('click', setPreviousImg);
+rightButton.addEventListener('click', setNextImg);
