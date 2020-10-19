@@ -1583,10 +1583,15 @@ label {
   align-content: center;
   cursor: pointer;
   border-radius: 2px;
+  font-size: 3rem;
 }
 
 .brand:hover {
   border: 1px solid #d58e32;
+}
+
+.brand:hover > i {
+  color: #d58e32;
 }
 
 .feedback {
